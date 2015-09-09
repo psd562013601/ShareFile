@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ff2a2829"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip">
+        
+        <TextView android:layout_height="wrap_content"
+            android:textSize="25sp"
+   			android:layout_width="wrap_content"
+  			android:text="@string/login_name" 
+  			/>
+
+        <EditText android:id="@+id/editText_login_name"
+            android:textSize="25sp"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ip_input_field"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:inputType="text"
+            android:labelFor="@+id/editText_login_name"
+            android:minWidth="100dip" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        >
+       
+        <TextView 
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+   			android:layout_width="wrap_content"
+  			android:text="@string/login_pwd" />
+ 		
+ 		<EditText android:id="@+id/editText_login_password"  
+ 		    android:layout_height="wrap_content"
+  			android:layout_width="200dip" 
+  			android:textSize="25sp"
+  			android:background="@drawable/ip_input_field"
+  			android:gravity="center"
+  			android:textColor="#ffffff"
+  			android:inputType="textPassword"
+  			android:labelFor="@+id/editText_login_password"
+  			android:minWidth="100dip"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="19dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_login"
+            style="@android:attr/buttonStyleSmall"
+            android:layout_width="106dip"
+            android:layout_height="69dip"
+            android:layout_marginLeft="30dip"
+            android:text="@android:string/yes"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_return"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="106dip"
+            android:layout_height="69dip" 
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:text="@android:string/no"
+            android:textSize="25sp" />
+    </LinearLayout>
+    
+</LinearLayout>
