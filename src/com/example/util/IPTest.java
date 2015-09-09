@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class IPTest {
 	public static final int PORT = 445;//smb·þÎñ¶Ë¿ÚºÅ
-	public static final int TIMEOUT = 5000;
+	public static final int TIMEOUT = 500;
 
 	private IPTest() {
 	}
